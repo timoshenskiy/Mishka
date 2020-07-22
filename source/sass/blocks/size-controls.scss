@@ -1,0 +1,25 @@
+.size-controls {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.size-controls__value {
+  display: block;
+  border: 2px solid rgba($basic-black, 0.1);
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+
+  &:hover,
+  &:focus {
+    border-color: rgba($basic-black, 0.3)
+  }
+
+  &:active,
+  .size-controls__radio:checked + & {
+    border-color: $basic-green;
+  }
+
+}
+

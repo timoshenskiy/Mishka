@@ -1,0 +1,22 @@
+.contacts {
+  padding-top: 38px;
+  padding-left: 29px;
+  padding-right: 30px;
+  padding-bottom: 39px;
+}
+
+.contacts__email-link {
+  color: $basic-black;
+  text-decoration: none;
+  border-bottom: 1px solid $special-border-color;
+
+  &:hover,
+  &:focus {
+    color: $special-green;
+    border-color: $special-green;
+  }
+
+  &:active {
+    border-color: rgba($special-green, 0.1);
+  }
+}
