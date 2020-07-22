@@ -4,7 +4,6 @@
 }
 
 .header__logo {
-
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -20,20 +19,20 @@
   width: 20px;
   min-height: 14px;
   font-size: 0;
-  background-image: url(../../img/icon-menu-open.svg);
+  background-image: url("../../img/icon-menu-open.svg");
   background-repeat: no-repeat;
 }
 
 .header__open-menu-control:checked ~ .header__open-menu-label {
   width: 21px;
   min-height: 20px;
-  background-image: url(../../img/icon-menu-close.svg);
+  background-image: url("../../img/icon-menu-close.svg");
 }
 
 .header__navigation {
   display: none;
 }
 
-.header__open-menu-control:checked ~ .header__navigation{
+.header__open-menu-control:checked ~ .header__navigation {
   display: block;
 }

@@ -23,7 +23,9 @@
 @import "blocks/cart-popup.scss";
 @import "blocks/size-controls.scss";
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -37,13 +39,13 @@ img {
 }
 
 .visually-hidden {
-  position: absolute ;
-	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0;
-	border: 0;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 .main-title {
@@ -131,4 +133,3 @@ img {
   background-size: contain;
   background-repeat: repeat-x;
 }
-
