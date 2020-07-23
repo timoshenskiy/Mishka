@@ -12,14 +12,14 @@
 
 .catalog__text-wrapper {
   border: 1px solid $basic-border-color;
+}
 
-  .catalog__item:hover & {
-    box-shadow: 0 6px 10px rgba($title-color, 0.1);
-  }
+.catalog__item:hover .catalog__text-wrapper {
+  box-shadow: 0 6px 10px rgba($title-color, 0.1);
+}
 
-  .catalog__item:active & {
-    box-shadow: 0 3px 5px rgba($title-color, 0.1);
-  }
+.catalog__item:active .catalog__text-wrapper {
+  box-shadow: 0 3px 5px rgba($title-color, 0.1);
 }
 
 .catalog__price-wrapper {

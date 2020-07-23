@@ -12,7 +12,6 @@
 }
 
 .about-company__item {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
@@ -26,36 +25,36 @@
   &--eco::before {
     width: 32px;
     min-height: 37px;
-    background-image: url("../../img/icon-feature-flower.svg");
+    background-image: url("../img/icon-feature-flower.svg");
   }
 
   &--price::before {
     width: 47px;
     min-height: 27px;
-    background-image: url("../../img/icon-feature-money.svg");
+    background-image: url("../img/icon-feature-money.svg");
   }
 
   &--like::before {
     width: 34px;
     min-height: 27px;
-    background-image: url("../../img/icon-feature-heart.svg");
+    background-image: url("../img/icon-feature-heart.svg");
   }
 
   &--handmade::before {
     width: 35px;
     min-height: 34px;
-    background-image: url("../../img/icon-feature-ball.svg");
+    background-image: url("../img/icon-feature-ball.svg");
   }
 
   &--motherland::before {
     width: 55px;
     min-height: 23px;
-    background-image: url("../../img/icon-feature-rocket.svg");
+    background-image: url("../img/icon-feature-rocket.svg");
   }
 
   &--box::before {
     width: 33px;
     min-height: 32px;
-    background-image: url("../../img/icon-feature-gift.svg");
+    background-image: url("../img/icon-feature-gift.svg");
   }
 }

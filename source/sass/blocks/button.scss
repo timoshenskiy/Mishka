@@ -1,0 +1,30 @@
+.button {
+  text-transform: uppercase;
+  background-color: $white;
+  border: 2px solid $basic-black;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $basic-black;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $basic-black;
+    outline: none;
+  }
+
+  &:active .button__text {
+    opacity: 0.3;
+  }
+
+  &--cart {
+    border: none;
+    background-color: $basic-green;
+    color: $white;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+  }
+}
