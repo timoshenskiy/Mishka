@@ -1,0 +1,15 @@
+.socials {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid $footer-border-color;
+  list-style: none;
+}
+
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
+  fill: $special-green;
+}
+
+.socials__link:active .socials__icon {
+  opacity: 0.3;
+}

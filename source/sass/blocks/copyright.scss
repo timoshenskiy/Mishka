@@ -1,0 +1,20 @@
+.copyright__link {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
+  color: $title-color;
+  text-decoration: none;
+
+  &:hover .copyright__logo,
+  &:focus .copyright__logo {
+    fill: $special-green;
+  }
+
+  &:active .copyright__logo {
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo {
+  fill: $basic-green;
+}

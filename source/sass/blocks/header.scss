@@ -1,0 +1,38 @@
+.header {
+  background-color: $white;
+  border-bottom: 1px solid $basic-border-color;
+}
+
+.header__logo {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.header__open-menu-control ~ .header__open-menu-label {
+  display: block;
+  width: 20px;
+  min-height: 14px;
+  font-size: 0;
+  background-image: url("../../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+}
+
+.header__open-menu-control:checked ~ .header__open-menu-label {
+  width: 21px;
+  min-height: 20px;
+  background-image: url("../../img/icon-menu-close.svg");
+}
+
+.header__navigation {
+  display: none;
+}
+
+.header__open-menu-control:checked ~ .header__navigation {
+  display: block;
+}

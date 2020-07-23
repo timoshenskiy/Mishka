@@ -1,0 +1,65 @@
+.reviews {
+  padding-bottom: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.reviews__item-author {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.reviews__item-source-link {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+  color: $basic-black;
+  text-decoration: none;
+}
+
+.reviews__control-button {
+  display: block;
+  width: 130px;
+  min-height: 52px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid $basic-border-color;
+  background-color: $white;
+  font-size: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    min-height: 26px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/icon-left-arrow.svg");
+  }
+
+  &--next::before {
+    background-image: url("../../img/icon-right-arrow.svg");
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}

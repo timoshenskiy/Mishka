@@ -1,0 +1,27 @@
+.week-offer {
+  padding-top: 31px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 36px;
+}
+
+.week-offer__mark {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $basic-green;
+}
+
+.week-offer__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.week-offer__price {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $basic-black;
+}
