@@ -1,5 +1,13 @@
 @import "variables.scss";
+@import "common.scss";
 /* general */
+@import "blocks/visually-hidden.scss";
+@import "blocks/main-title.scss";
+@import "blocks/title.scss";
+@import "blocks/subtitle.scss";
+@import "blocks/common-title.scss";
+@import "blocks/button.scss";
+@import "blocks/separate.scss";
 @import "blocks/page.scss";
 @import "blocks/header.scss";
 @import "blocks/footer.scss";
@@ -19,117 +27,9 @@
 /* form.html */
 @import "blocks/order-form.scss";
 @import "blocks/controls.scss";
+@import "blocks/form-control.scss";
+@import "blocks/radio.scss";
+@import "blocks/checkbox.scss";
 /* popup */
 @import "blocks/cart-popup.scss";
 @import "blocks/size-controls.scss";
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  min-height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.main-title {
-  display: block;
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  font-size: 27px;
-  line-height: 30px;
-  color: $title-color;
-
-  &--inner {
-    min-height: 177px;
-    background-color: $special-background;
-  }
-
-  &--popup {
-    font-size: 25px;
-    line-height: 30px;
-  }
-}
-
-.title {
-  font-size: 25px;
-  line-height: 30px;
-  color: $title-color;
-}
-
-.subtitle {
-  font-size: 18px;
-  line-height: 30px;
-  color: $title-color;
-}
-
-.common-title {
-  font-size: 17px;
-  line-height: 24px;
-  color: $title-color;
-}
-
-.button {
-  text-transform: uppercase;
-  background-color: $white;
-  border: 2px solid $basic-black;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-  text-decoration: none;
-  color: $basic-black;
-
-  &:hover,
-  &:focus {
-    color: $white;
-    background-color: $basic-black;
-    outline: none;
-  }
-
-  &:active .button__text {
-    opacity: 0.3;
-  }
-
-  &--cart {
-    border: none;
-    background-color: $basic-green;
-    color: $white;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 16px;
-  }
-}
-
-.separate {
-  position: relative;
-  display: block;
-}
-
-.separate__line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  min-height: 6px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-size: contain;
-  background-repeat: repeat-x;
-}

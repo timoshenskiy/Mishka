@@ -1,3 +1,49 @@
 .production-process {
   display: block;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 58px;
+  border: 1px solid $basic-border-color;
+
+  &:hover,
+  &:focus-within {
+    box-shadow: 0 6px 10px rgba($title-color, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($title-color, 0.1);
+  }
+}
+
+.production-process__play-button {
+  display: block;
+  width: 101px;
+  min-height: 77px;
+  background-color: $white;
+  background-image: url("../img/icon-play.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    transform: scale(1.2);
+  }
+
+  &:active {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+.production-process__title::before {
+  content: "";
+  display: block;
+  width: 32px;
+  min-height: 22px;
+  background-image: url("../img/icon-video.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }

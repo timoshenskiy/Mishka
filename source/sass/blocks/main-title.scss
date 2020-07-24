@@ -1,0 +1,19 @@
+.main-title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  color: $title-color;
+
+  &--inner {
+    min-height: 177px;
+    background-color: $special-background;
+  }
+
+  &--popup {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}

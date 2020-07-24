@@ -1,0 +1,27 @@
+.checkbox {
+  position: relative;
+  width: 40px;
+  min-height: 39px;
+  border: 2px solid $basic-black;
+}
+
+.checkbox__mark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.checkbox__input:checked + .checkbox__mark {
+  display: block;
+}
+
+.checkbox:hover,
+.checkbox:focus-within {
+  border-color: $special-border-color;
+}
+
+.checkbox:active {
+  border-color: rgba($basic-black, 0.3);
+}

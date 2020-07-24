@@ -1,0 +1,16 @@
+.separate {
+  position: relative;
+  display: block;
+}
+
+.separate__line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  min-height: 6px;
+  background-image: url("img/bg-zigzag-line.svg");
+  background-size: contain;
+  background-repeat: repeat-x;
+}

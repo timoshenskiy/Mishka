@@ -1,3 +1,22 @@
 .order-form {
   display: block;
+  margin-top: 17px;
+  margin-left: 29px;
+  margin-right: 17px;
+  margin-bottom: 55px;
+}
+
+.order-form__text {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.order-form__controls {
+  margin: 0;
+  padding: 0;
+}
+
+.order-form__explanation {
+  font-size: 14px;
+  line-height: 16px;
 }
