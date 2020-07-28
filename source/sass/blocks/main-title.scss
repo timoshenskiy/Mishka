@@ -17,3 +17,17 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

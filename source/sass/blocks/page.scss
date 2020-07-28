@@ -14,3 +14,10 @@
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
+
+@media (min-width: $tablet-width) {
+  .page {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

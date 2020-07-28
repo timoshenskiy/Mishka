@@ -1,8 +1,20 @@
 .socials {
+  display: flex;
+  justify-content: space-between;
+
+  width: 260px;
+  min-height: 80px;
   margin: 0;
   padding: 0;
+  padding-top: 30px;
+  padding-left: 57px;
+  padding-right: 62px;
   border-bottom: 1px solid $footer-border-color;
   list-style: none;
+}
+
+.socials__link {
+  display: block;
 }
 
 .socials__link:hover .socials__icon,

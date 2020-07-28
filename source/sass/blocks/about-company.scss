@@ -58,3 +58,15 @@
     background-image: url("../img/icon-feature-gift.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about-company {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about-company__list {
+    display: grid;
+    grid-template-columns: min-content min-content;
+  }
+}
