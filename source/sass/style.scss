@@ -2,19 +2,23 @@
 @import "common.scss";
 /* general */
 @import "blocks/visually-hidden.scss";
+@import "blocks/container.scss";
 @import "blocks/main-title.scss";
 @import "blocks/title.scss";
 @import "blocks/subtitle.scss";
 @import "blocks/common-title.scss";
 @import "blocks/button.scss";
+@import "blocks/zig-zag.scss";
 @import "blocks/separate.scss";
 @import "blocks/page.scss";
 @import "blocks/header.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/search.scss";
+@import "blocks/cart.scss";
 @import "blocks/footer.scss";
 @import "blocks/socials.scss";
 @import "blocks/copyright.scss";
 /* index.html */
-@import "blocks/main-navigation.scss";
 @import "blocks/categories.scss";
 @import "blocks/week-offer.scss";
 @import "blocks/specifications.scss";

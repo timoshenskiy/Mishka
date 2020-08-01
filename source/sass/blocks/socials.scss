@@ -1,8 +1,19 @@
 .socials {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  min-height: 80px;
   margin: 0;
   padding: 0;
+  padding-top: 30px;
+  padding-left: 57px;
+  padding-right: 62px;
   border-bottom: 1px solid $footer-border-color;
   list-style: none;
+}
+
+.socials__link {
+  display: block;
 }
 
 .socials__link:hover .socials__icon,
@@ -12,4 +23,10 @@
 
 .socials__link:active .socials__icon {
   opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .socials__item {
+    padding-left: 40px;
+  }
 }

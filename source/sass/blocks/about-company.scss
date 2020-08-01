@@ -1,8 +1,15 @@
 .about-company {
+  max-width: $desktop-width;
+  margin: 0 auto;
   padding-top: 31px;
-  padding-bottom: 58px;
+  padding-bottom: 55px;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.about-company__title {
+  margin: 0;
+  padding: 0;
 }
 
 .about-company__list {
@@ -12,49 +19,148 @@
 }
 
 .about-company__item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 30px;
+  min-height: 93px;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
 
   &::before {
     content: "";
+    position: absolute;
     display: block;
     background-repeat: no-repeat;
   }
 
   &--eco::before {
+    top: 0;
+    left: 8px;
     width: 32px;
     min-height: 37px;
     background-image: url("../img/icon-feature-flower.svg");
   }
 
   &--price::before {
+    top: 0;
+    left: 0;
     width: 47px;
     min-height: 27px;
     background-image: url("../img/icon-feature-money.svg");
   }
 
   &--like::before {
+    top: 4px;
+    left: 8px;
     width: 34px;
     min-height: 27px;
     background-image: url("../img/icon-feature-heart.svg");
   }
 
   &--handmade::before {
+    top: 2px;
+    left: 4px;
     width: 35px;
     min-height: 34px;
     background-image: url("../img/icon-feature-ball.svg");
   }
 
   &--motherland::before {
+    top: 2px;
+    left: -5px;
     width: 55px;
     min-height: 23px;
     background-image: url("../img/icon-feature-rocket.svg");
   }
 
   &--box::before {
+    top: 0;
+    left: 3px;
     width: 33px;
     min-height: 32px;
     background-image: url("../img/icon-feature-gift.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-company {
+    padding-top: 56px;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
+
+  .about-company__title {
+    margin-bottom: 12px;
+    padding-left: 2px;
+  }
+
+  .about-company__list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .about-company__item {
+    min-height: 99px;
+    margin-bottom: 26px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--eco {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &--price {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &--like {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+
+    &--handmade {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &--motherland {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &--box {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-company {
+    padding-top: 68px;
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-bottom: 60px;
+  }
+
+  .about-company__title {
+    padding-left: 0;
   }
 }

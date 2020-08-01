@@ -8,12 +8,40 @@
   color: $title-color;
 
   &--inner {
-    min-height: 177px;
+    padding-top: 73px;
+    padding-bottom: 73px;
+    text-align: center;
     background-color: $special-background;
   }
 
   &--popup {
     font-size: 25px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    font-size: 43px;
+    line-height: 50px;
+
+    &--inner {
+      padding-top: 101px;
+      padding-bottom: 73px;
+      padding-left: 2px;
+      text-align: center;
+      background-color: $special-background;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-title {
+    font-size: 53px;
+    line-height: 57px;
+
+    &--inner {
+      padding-bottom: 95px;
+    }
   }
 }

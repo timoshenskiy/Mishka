@@ -1,4 +1,14 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+}
+
 .copyright__link {
+  display: flex;
+
+  align-items: center;
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
@@ -16,5 +26,6 @@
 }
 
 .copyright__logo {
+  margin-left: 27px;
   fill: $basic-green;
 }

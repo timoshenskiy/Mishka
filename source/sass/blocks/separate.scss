@@ -1,16 +1,35 @@
+
 .separate {
-  position: relative;
-  display: block;
+  width: 100%;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    min-height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+  }
 }
 
-.separate__line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  min-height: 6px;
-  background-image: url("img/bg-zigzag-line.svg");
-  background-size: contain;
-  background-repeat: repeat-x;
+@media (min-width: $tablet-width) {
+  .separate {
+    &::before {
+      min-height: 17px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .separate {
+    max-width: $desktop-width;
+    margin: 0 auto;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+
+    &::before {
+      min-height: 23px;
+    }
+  }
 }

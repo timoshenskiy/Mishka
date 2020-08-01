@@ -1,11 +1,23 @@
 .week-offer {
-  padding-top: 31px;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 36px;
+  padding-bottom: 35px;
+}
+
+
+.week-offer__title {
+  margin: 0;
+  padding: 0;
 }
 
 .week-offer__mark {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  display: block;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 17px;
@@ -14,14 +26,178 @@
 }
 
 .week-offer__description {
-  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  margin-top: 17px;
   line-height: 24px;
   color: $basic-black;
 }
 
+.week-offer__specifications {
+  margin-top: 21px;
+}
+
+.week-offer__image {
+  width: 100%;
+  margin-top: 28px;
+}
+
 .week-offer__price {
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+  text-align: center;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: $basic-black;
+}
+
+.week-offer__order-link {
+  display: block;
+  width: 100%;
+  font-size: 17px;
+  margin-top: 24px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .week-offer {
+    display: grid;
+    grid-template-columns: 292px 1fr min-content;
+    grid-template-rows: min-content min-content 1fr min-content;
+    padding-top: 54px;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+    padding-bottom: 50px;
+  }
+
+  .week-offer__title {
+    min-height: 71px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .week-offer__mark {
+    display: block;
+    width: 130px;
+    margin-left: auto;
+    line-height: 17px;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .week-offer__description {
+    line-height: 30px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .week-offer__specifications {
+    margin-top: 39px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .week-offer__image {
+    padding-left: 42px;
+    padding-bottom: 2px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+
+
+  .week-offer__order-wrapper {
+    min-height: 110px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .week-offer__price {
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .week-offer__order-link {
+    margin-top: 31px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-offer {
+    display: grid;
+    grid-template-columns: min-content 292px 1fr;
+    grid-template-rows: min-content min-content 1fr min-content;
+    padding-top: 42px;
+    padding-bottom: 70px;
+  }
+
+  .week-offer__title {
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 88px;
+    z-index: 2;
+  }
+
+  .week-offer__mark {
+    width: 100px;
+    margin-top: 97px;
+    margin-left: 31px;
+    margin-right: 43px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .week-offer__description {
+    margin-top: 23px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .week-offer__specifications {
+    margin-top: 55px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .week-offer__image {
+    padding-left: 58px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+
+  .week-offer__order-wrapper {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
 }

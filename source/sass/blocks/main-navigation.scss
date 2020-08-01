@@ -1,3 +1,7 @@
+.main-navigation {
+  width: 100%;
+}
+
 .main-navigation__list {
   margin: 0;
   padding: 0;
@@ -5,35 +9,106 @@
 }
 
 .main-navigation__item {
-  &:hover .main-navigation__link,
-  &:focus-within .main-navigation__link {
-    opacity: 0.6;
-  }
+  position: relative;
+  display: block;
+  min-height: 79px;
+  box-shadow: inset 0 1px 0 $basic-border-color;
 
-  &:active .main-navigation__link {
-    opacity: 0.3;
-  }
-
-  &:hover .main-navigation__icon {
-    fill: $basic-green;
-    opacity: 1;
-  }
-
-  &:active .main-navigation__icon {
-    fill: $basic-green;
-    opacity: 0.3;
+  &--new,
+  &--sale {
+    display: none;
   }
 }
 
 .main-navigation__link {
+  display: block;
+  width: 100%;
+  min-height: 79px;
+  padding-top: 30px;
+  padding-left: 75px;
+  padding-right: 10px;
+  padding-bottom: 10px;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: $title-color;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba($title-color, 0.6);
+  }
+
+  &:active {
+    color: rgba($title-color, 0.3);
+  }
 }
 
-.main-navigation__icon {
-  fill: $title-color;
-  opacity: 0.2;
+@media (min-width: $tablet-width) {
+  .main-navigation {
+    padding: 0;
+  }
+
+  .main-navigation__list {
+    display: flex;
+  }
+
+  .main-navigation__item {
+    margin-right: 36px;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .main-navigation__link {
+    min-height: 89px;
+    margin: 0;
+    padding: 0;
+    padding-top: 18px;
+    font-size: 15px;
+  }
+
+  .main-navigation__link--search .main-navigation__icon {
+    top: 35px;
+    left: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__list {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: min-content min-content;
+  }
+
+  .main-navigation__item {
+    min-width: 185px;
+    margin-right: 35px;
+
+    &--catalog {
+      border-right: 1px solid rgba($title-color, 0.1);
+    }
+
+    &--new,
+    &--sale {
+      display: block;
+    }
+  }
+
+  .main-navigation__link {
+    min-height: 89px;
+    padding: 0;
+    padding-top: 33px;
+    font-size: 17px;
+    line-height: 24px;
+
+    &--new,
+    &--sale {
+      padding-top: 20px;
+    }
+  }
+
+  .main-navigation__item--new .main-navigation__link,
+  .main-navigation__item--sale .main-navigation__link {
+    font-size: 15px;
+  }
 }

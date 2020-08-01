@@ -3,3 +3,17 @@
   line-height: 30px;
   color: $title-color;
 }
+
+@media (min-width: $tablet-width) {
+  .subtitle {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subtitle {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
