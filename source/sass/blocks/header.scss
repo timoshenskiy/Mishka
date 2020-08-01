@@ -1,11 +1,17 @@
 .header {
+  width: 100%;
+  background-color: $white;
+  border-bottom: 1px solid $basic-border-color;
+}
+
+.header__container {
+  width: 100%;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   min-height: 79px;
-  background-color: $white;
-  border-bottom: 1px solid $basic-border-color;
+  z-index: 2;
 }
 
 .header__logo {
@@ -28,52 +34,58 @@
   display: none;
 }
 
-.header__open-menu-label {
+.header__menu-button {
   position: absolute;
+  padding: 0;
+  border: 0;
   top: 29px;
   right: 30px;
   display: block;
-  width: 20px;
-  min-height: 14px;
-  font-size: 0;
-  line-height: 0;
-  background-image: url("../img/icon-menu-open.svg");
-  background-repeat: no-repeat;
-}
-
-.header__open-menu-control:checked ~ .header__open-menu-label {
   width: 21px;
   min-height: 20px;
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
   background-image: url("../img/icon-menu-close.svg");
+  background-repeat: no-repeat;
+
+  &:active {
+    outline: none;
+  }
+
+  &--close {
+    width: 20px;
+    min-height: 14px;
+    background-image: url("../img/icon-menu-open.svg");
+  }
 }
 
 .header__navigation {
-  display: none;
+  display: block;
+
+  &--close {
+    display: none;
+  }
 }
 
 .header__search-cart-wrapper {
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   width: 100%;
-}
 
-.header__open-menu-control:checked ~ .header__navigation {
-  display: block;
-}
-
-.header__open-menu-control:checked ~ .header__search-cart-wrapper {
-  display: flex;
+  &--close {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .header {
+  .header__container {
     display: grid;
     grid-template-columns: 1fr min-content min-content;
     grid-template-rows: 89px 1fr;
-    justify-content: start;
     height: 89px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
   }
 
   .header__logo {
@@ -94,6 +106,7 @@
 
   .header__text {
     display: block;
+    font-size: 15px;
     min-width: 265px;
     text-align: right;
     margin: 0;
@@ -105,7 +118,7 @@
     grid-row-end: 3;
   }
 
-  .header__open-menu-label {
+  .header__menu-button {
     display: none;
   }
 
@@ -119,9 +132,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .header {
+  .header__container {
     max-height: 89px;
-    grid-template-columns: 45% 10% 45%;
+    grid-template-columns: 40% 20% 40%;
   }
 
   .header__logo {
@@ -143,7 +156,7 @@
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-end: 4;
   }
 
   .header__search-cart-wrapper {

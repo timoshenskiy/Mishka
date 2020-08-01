@@ -1,12 +1,17 @@
 .categories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  position: relative;
   padding-top: 72px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-color: $categories-middle-background;
   background-position: 50% -15%;
   background-repeat: no-repeat;
+}
+
+.categories__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .categories__title {
@@ -125,21 +130,8 @@
   .categories__list {
     margin-top: 370px;
     flex-wrap: nowrap;
-    position: relative;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .categories__list::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -12px;
-    display: block;
-    width: 100%;
-    min-height: 24px;
-    background-image: url("../img/zigzag-fill-desktop.svg");
-    background-size: contain;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
   }
 
   .categories__link {
@@ -181,16 +173,7 @@
   .categories {
     padding-top: 155px;
     background-image: url("../img/hero-desktop@1x.jpg");
-  }
-
-  .categories__list::after {
-    width: calc(100% + 100px);
-    left: -50px;
-    right: -50px;
-    bottom: -21px;
-    min-height: 39px;
-    background-size: contain;
-    background-position: 63px 0;
+    overflow: hidden;
   }
 
   .categories__title {

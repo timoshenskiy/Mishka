@@ -12,11 +12,11 @@
 
 <body class="page__body">
   <header class="header">
+    <div class="header__container container">
     <a class="header__logo">
       <img src="img/logo-mobile.svg" alt="Логотип" />
     </a>
-    <input class="header__open-menu-control visually-hidden" type="checkbox" id="main-menu" checked />
-    <label class="header__open-menu-label" for="main-menu">Открыть/Закрыть главное меню</label>
+    <button class="header__menu-button">Открыть/Закрыть главное меню</button>
     <nav class="header__navigation main-navigation">
       <ul class="main-navigation__list">
         <li class="main-navigation__item main-navigation__item--catalog"><a class="main-navigation__link" href="catalog.html">Каталог товаров</a></li>
@@ -44,10 +44,12 @@
         Корзина: пока пуста</a>
     </div>
     <p class="header__text">Бесплатная доставка по России</p>
+  </div>
   </header>
   <main>
     <h1 class="visually-hidden">Магазин Mishka</h1>
     <section class="categories">
+      <div class="header__categories container">
       <h2 class="categories__title main-title">Милые штуки ручной <span class="categories__new-line">работы для
           дома</span></h2>
       <ul class="categories__list">
@@ -58,8 +60,10 @@
           <a class="categories__link categories__link--second" href="catalog.html"><span class="categories__text">Детские игрушки</span></a>
         </li>
       </ul>
+      </div>
     </section>
-    <section class="week-offer separate">
+    <div class="zig-zag"></div>
+    <section class="week-offer">
       <h3 class="week-offer__title title">Вязаные корзинки</h3>
       <h2 class="week-offer__mark">Товар недели</h2>
       <p class="week-offer__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
@@ -97,44 +101,46 @@
         <p class="week-offer__price">Цена: 990 руб.</p>
         <a class="week-offer__order-link button" href="#"><span class="button__text">Заказать</span></a>
       </div>
-      <div class="separate__line"></div>
     </section>
+    <div class="separate"></div>
     <section class="about-company">
       <h2 class="about-company__title title">Коротко о нас:</h2>
       <ul class="about-company__list">
-        <li class="about-company__item about-company__item--eco">Экологически чистые материалы</li>
-        <li class="about-company__item about-company__item--price">Скандинавский стиль по российской цене</li>
-        <li class="about-company__item about-company__item--like">Увеличивает лайки на фотографиях</li>
-        <li class="about-company__item about-company__item--handmade">Связано вручную с любовью и умилением</li>
-        <li class="about-company__item about-company__item--motherland">Поддержка отечественного производителя</li>
-        <li class="about-company__item about-company__item--box">Поставляется в подарочной упаковке</li>
+        <li class="about-company__item about-company__item--eco">Экологически<br> чистые материалы</li>
+        <li class="about-company__item about-company__item--price">Скандинавский стиль<br> по российской цене</li>
+        <li class="about-company__item about-company__item--like">Увеличивает лайки<br> на фотографиях</li>
+        <li class="about-company__item about-company__item--handmade">Связано вручную с<br> любовью и умилением</li>
+        <li class="about-company__item about-company__item--motherland">Поддержка отечественного<br> производителя</li>
+        <li class="about-company__item about-company__item--box">Поставляется в<br> подарочной упаковке</li>
       </ul>
     </section>
-    <section class="reviews separate">
+    <section class="reviews">
       <h2 class="reviews__title title">Отзывы</h2>
-      <blockquote class="reviews__item-text">
+      <blockquote class="reviews__text">
         Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
         инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
         стильными, а также
         набирают больше лайков!
       </blockquote>
-      <cite class="reviews__item-author">
+      <cite class="reviews__author">
         Анастасия Красильникова
-        <a class="reviews__item-source-link" href="#">@misssssiskras</a>
+        <a class="reviews__source-link" href="#">@misssssiskras</a>
       </cite>
       <div class="reviews__control-wrapper">
         <button class="reviews__control-button">Предыдущий отзыв</button>
         <button class="reviews__control-button reviews__control-button--next">Следующий отзыв</button>
       </div>
       <a class="reviews__feedback-link button" href="#"><span class="button__text">Написать</span></a>
-      <div class="separate__line"></div>
     </section>
+    <div class="separate"></div>
     <section class="contacts">
+      <div class="contacts__wrapper">
       <h2 class="contacts__title subtitle">Контакты</h2>
-      <p class="contacts__email-text">email: <a class="contacts__email-link"
+      <p class="contacts__email">e-mail: <a class="contacts__email-link"
           href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
-      <p class="contacts__address-text">адрес: г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</p>
-      <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="Мы на карте" />
+      <p class="contacts__address">адрес: <span class="contacts__address-text">г. Санкт-Петербург,<br>ул. Большая Конюшенная, <br>д. 19/8, офис 101</span></p>
+    </div>
+      <div class="contacts__map map-js"></div>
       <a class="contacts__feedback-link button" href="#"><span class="button__text">Напишите нам</span></a>
     </section>
   </main>
@@ -167,6 +173,7 @@
     </form>
   </section>
   <footer class="footer">
+    <div class="footer__container container">
     <img class="footer__logo" src="img/logo-footer.svg">
     <ul class="footer__socials socials">
       <li class="socials__item">
@@ -223,7 +230,12 @@
         </svg>
       </a>
     </p>
+  </div>
   </footer>
+  <!-- <script src="js/main-menu.js"></script> -->
+  <script src="js/popup.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/yandex-map.js"></script>
 </body>
 
 </html>

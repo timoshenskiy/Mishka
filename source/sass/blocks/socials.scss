@@ -1,7 +1,6 @@
 .socials {
   display: flex;
   justify-content: space-between;
-
   width: 260px;
   min-height: 80px;
   margin: 0;
@@ -24,4 +23,10 @@
 
 .socials__link:active .socials__icon {
   opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .socials__item {
+    padding-left: 40px;
+  }
 }
