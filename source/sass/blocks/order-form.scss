@@ -1,22 +1,109 @@
 .order-form {
   display: block;
-  margin-top: 17px;
-  margin-left: 29px;
-  margin-right: 17px;
-  margin-bottom: 55px;
+  padding-top: 17px;
+  padding-bottom: 55px;
 }
 
 .order-form__text {
+  margin: 0;
+  margin-left: 30px;
+  margin-right: 40px;
   font-size: 13px;
   line-height: 24px;
 }
 
-.order-form__controls {
+.order-form__container {
+  padding-top: 31px;
+}
+
+.order-form__control {
   margin: 0;
   padding: 0;
 }
 
+.order-form__submit-wrapper {
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .order-form__explanation {
+  display: block;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 16px;
+}
+
+.order-form__submit {
+  display: block;
+  width: 100%;
+  margin-top: 29px;
+  margin-left: -1px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 6px;
+  padding-right: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__container {
+    padding-top: $desktop-padding;
+    padding-bottom: $desktop-padding;
+
+    &--even {
+      background-color: $special-background;
+    }
+  }
+
+
+  .order-form__text {
+    margin-left: $desktop-padding;
+    margin-right: $desktop-padding;
+    margin-top: 50px;
+    margin-bottom: 11px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order-form__submit-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
+
+  .order-form__explanation {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 30px;
+    order: 2;
+  }
+
+  .order-form__submit {
+    width: auto;
+    min-width: 230px;
+    margin: 0;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__text {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4 * $desktop-grid-line;
+  }
+
+  .order-form__submit-wrapper {
+    width: 4 * $desktop-grid-line;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
