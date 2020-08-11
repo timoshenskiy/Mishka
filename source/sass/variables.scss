@@ -1,10 +1,14 @@
 $basic-font-family: "Open Sans", "Arial", sans-serif;
 
+
+$tablet-grid-line: 167px;
+$desktop-grid-line: 175px;
+
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1150px;
 
-$tablet-padding: 30px;
+$mobile-padding: 30px;
 $desktop-padding: 50px;
 
 $title-color: #000000;
@@ -21,3 +25,8 @@ $alternative-green: #56c3b2;
 $basic-border-color: #ececec;
 $special-border-color: #62d1ba;
 $footer-border-color: #e5e5e5;
+
+$middle-color-week-offer: #cdd1d0;
+$middle-color-map: #ebe3d1;
+$middle-color-catalog-item: #e5dcd9;
+$middle-color-production-process: #9ac8be;

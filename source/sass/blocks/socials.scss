@@ -1,11 +1,13 @@
 .socials {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 260px;
   min-height: 80px;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   padding-left: 57px;
   padding-right: 62px;
   border-bottom: 1px solid $footer-border-color;
@@ -13,6 +15,11 @@
 }
 
 .socials__link {
+  position: relative;
+  display: block;
+}
+
+.socials__icon {
   display: block;
 }
 
@@ -26,7 +33,9 @@
 }
 
 @media (min-width: 768px) {
-  .socials__item {
-    padding-left: 40px;
+  .socials {
+    padding-left: 97px;
+    padding-right: 24px;
+    border-bottom: none;
   }
 }

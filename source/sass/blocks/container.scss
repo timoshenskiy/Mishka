@@ -2,4 +2,8 @@
   width: 100%;
   max-width: $desktop-width;
   margin: 0 auto;
+
+  &--with-border {
+    max-width: $desktop-width - 2 * $desktop-padding;
+  }
 }

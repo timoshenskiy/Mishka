@@ -1,0 +1,51 @@
+.textarea {
+  position: relative;
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.textarea__field {
+  display: block;
+  width: 100%;
+  min-height: 142px;
+  padding-top: 17px;
+  padding-left: 18px;
+  font-size: 17px;
+  line-height: 18px;
+  border: 2px solid $basic-black;
+  resize: none;
+  font-family: $basic-font-family;
+
+  &::placeholder {
+    color: rgba($title-color, 0.3);
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $special-border-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .textarea__field {
+    padding-top: 15px;
+    padding-left: 15px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea__field {
+    width: 4 * $desktop-grid-line;
+
+    &::placeholder {
+      color: $title-color;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.input {
+  position: relative;
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 17px;
+  margin-top: 24px;
+
+  &--tel {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  &--email {
+    margin-top: 8px;
+  }
+}
+
+.input__label {
+  display: block;
+}
+
+.input__text {
+  display: block;
+  margin-top: 6px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.input__field {
+  display: block;
+  width: 100%;
+  min-height: 52px;
+  margin-top: -1px;
+  margin-left: -1px;
+  padding-top: 3px;
+  border: none;
+  border-bottom: 2px solid $title-color;
+  background-color: transparent;
+  font-family: $basic-font-family;
+  font-size: 17px;
+  line-height: 18px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $special-border-color;
+  }
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba($title-color, 0.3);
+  }
+}
+
+.input--tel .input__field::placeholder {
+  font-size: 19px;
+}
+
+
+.input__icon {
+  position: absolute;
+  top: 20%;
+  right: 8px;
+  fill: $title-color;
+  opacity: 0.2;
+}
+
+.input__field:hover + .input__icon {
+  fill: $special-border-color;
+  opacity: 1;
+}
+
+.input__field:focus + .input__icon {
+  opacity: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .input {
+    row-gap: 26px;
+    margin: 0;
+
+    &--tel {
+      margin-top: 0;
+      margin-bottom: 19px;
+    }
+
+    &--email {
+      margin-top: 8px;
+    }
+  }
+
+  .input__label {
+    display: flex;
+  }
+
+  .input__text {
+    display: block;
+    margin-top: 15px;
+    margin-right: 26px;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .input__field {
+    padding-top: 5px;
+    padding-left: 18px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input {
+    width: 4 * $desktop-grid-line;
+    row-gap: 26px;
+    margin: 0;
+
+    &--tel {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    &--email {
+      margin-top: 8px;
+    }
+  }
+
+  .input__label {
+    display: flex;
+  }
+
+  .input__text {
+    display: block;
+    margin-top: 15px;
+    margin-right: 26px;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .input__field {
+    &::placeholder {
+      color: $title-color;
+    }
+  }
+}

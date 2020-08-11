@@ -1,3 +1,4 @@
+@import "fonts.scss";
 @import "variables.scss";
 @import "common.scss";
 /* general */
@@ -30,10 +31,11 @@
 @import "blocks/production-process.scss";
 /* form.html */
 @import "blocks/order-form.scss";
-@import "blocks/controls.scss";
-@import "blocks/form-control.scss";
+@import "blocks/control.scss";
 @import "blocks/radio.scss";
 @import "blocks/checkbox.scss";
+@import "blocks/input.scss";
+@import "blocks/textarea.scss";
 /* popup */
 @import "blocks/cart-popup.scss";
 @import "blocks/size-controls.scss";
