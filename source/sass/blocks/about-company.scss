@@ -1,8 +1,8 @@
 .about-company {
   max-width: $desktop-width;
   margin: 0 auto;
-  padding-top: 31px;
-  padding-bottom: 55px;
+  padding-top: 32px;
+  padding-bottom: 57px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -87,14 +87,13 @@
 
 @media (min-width: $tablet-width) {
   .about-company {
-    padding-top: 56px;
+    padding-top: 57px;
     padding-left: $desktop-padding;
     padding-right: $desktop-padding;
   }
 
   .about-company__title {
-    margin-bottom: 12px;
-    padding-left: 2px;
+    margin-bottom: 13px;
   }
 
   .about-company__list {
@@ -157,10 +156,10 @@
     padding-top: 68px;
     padding-left: 225px;
     padding-right: 225px;
-    padding-bottom: 60px;
+    padding-bottom: 63px;
   }
 
   .about-company__title {
-    padding-left: 0;
+    margin-bottom: 10px;
   }
 }
