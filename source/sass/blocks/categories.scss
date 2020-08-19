@@ -24,10 +24,6 @@
   text-align: center;
 }
 
-.categories__new-line {
-  display: block;
-}
-
 .categories__list {
   display: flex;
   width: 100%;
@@ -124,11 +120,11 @@
   .categories {
     padding-top: 154px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: 50% 0%;
+    background-position: 50% -2px;
   }
 
   .categories__list {
-    margin-top: 370px;
+    margin-top: 371px;
     flex-wrap: nowrap;
     padding-left: $desktop-padding;
     padding-right: $desktop-padding;
@@ -185,6 +181,6 @@
   }
 
   .categories__list {
-    margin-top: 358px;
+    margin-top: 356px;
   }
 }

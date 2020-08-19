@@ -186,5 +186,30 @@
     .catalog__image {
       min-height: 462px;
     }
+
+    .catalog__title {
+      margin-top: 27px;
+      margin-left: -4px;
+    }
+
+    .catalog__specifications {
+      margin-top: 5px;
+      margin-left: -3px;
+    }
+
+    .catalog__price-wrapper {
+      margin-top: 12px;
+    }
+
+    .catalog__price {
+      margin-top: 24px;
+      margin-left: -4px;
+    }
+
+    .catalog__button {
+      margin: 0;
+      padding: 0;
+      margin-top: 18px;
+    }
   }
 }

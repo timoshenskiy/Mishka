@@ -19,10 +19,9 @@
 @media (min-width: $desktop-width) {
   .zig-zag {
     display: block;
-    width: calc(100% + 100px);
-    left: -50px;
-    right: -50px;
-    bottom: 21px;
+    width: 100%;
+    bottom: 15px;
+    left: -6px;
     min-height: 39px;
     margin-bottom: -39px;
     background-size: contain;

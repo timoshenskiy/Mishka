@@ -41,7 +41,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  margin-top: 28px;
+  margin-top: 24px;
   background-color: $middle-color-week-offer;
 }
 
@@ -59,7 +59,7 @@
 .week-offer__order-link {
   display: block;
   width: 100%;
-  font-size: 17px;
+  font-size: 18px;
   margin-top: 24px;
   padding-top: 15px;
   padding-bottom: 13px;
@@ -71,7 +71,7 @@
     display: grid;
     grid-template-columns: 292px 1fr min-content;
     grid-template-rows: min-content min-content 1fr min-content;
-    padding-top: 54px;
+    padding-top: 52px;
     padding-left: $desktop-padding;
     padding-right: $desktop-padding;
     padding-bottom: 50px;
@@ -115,13 +115,15 @@
 
   .week-offer__image-wrapper {
     padding-left: 42px;
-    padding-bottom: 2px;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 5;
   }
 
+  .week-offer__image {
+    margin-top: 29px;
+  }
 
   .week-offer__order-wrapper {
     min-height: 110px;
@@ -133,12 +135,14 @@
 
   .week-offer__price {
     margin-top: 0;
+    margin-left: -4px;
     font-size: 20px;
     line-height: 24px;
   }
 
   .week-offer__order-link {
-    margin-top: 31px;
+    margin-top: 33px;
+    font-size: 17px;
   }
 }
 
@@ -147,7 +151,7 @@
     display: grid;
     grid-template-columns: min-content 292px 1fr;
     grid-template-rows: min-content min-content 1fr min-content;
-    padding-top: 42px;
+    padding-top: 44px;
     padding-bottom: 70px;
   }
 
@@ -181,7 +185,7 @@
   }
 
   .week-offer__specifications {
-    margin-top: 55px;
+    margin-top: 51px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
