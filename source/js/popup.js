@@ -16,8 +16,9 @@ if (orderButtons) {
       evt.preventDefault();
       cartPopup.classList.remove(HIDE_CLASS);
       cartPopupWrapper.classList.add(SHOW_CLASS);
+
       for (var j = 0; j < cartPopupControls.length; j++) {
-        cartPopupControls[i].setAttribute("tabindex", 0);
+        cartPopupControls[j].setAttribute("tabindex", 0);
       }
       cartPopupControls[0].focus();
     });
