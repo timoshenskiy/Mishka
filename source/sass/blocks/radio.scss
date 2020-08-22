@@ -7,7 +7,7 @@
 .radio__label {
   display: flex;
   padding: 0;
-  padding-left: 1px;
+  padding-left: 2px;
 }
 
 .radio__mark {
@@ -16,7 +16,7 @@
   align-items: center;
   margin-right: 23px;
   border-radius: 50%;
-  min-width: 39px;
+  min-width: 37px;
   height: 39px;
   border: 2px solid $basic-black;
 

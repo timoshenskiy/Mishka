@@ -13,7 +13,7 @@
 }
 
 .order-form__container {
-  padding-top: 31px;
+  padding-top: 30px;
 }
 
 .order-form__control {
@@ -22,7 +22,7 @@
 }
 
 .order-form__submit-wrapper {
-  margin-top: 20px;
+  margin-top: 18px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -39,7 +39,6 @@
   display: block;
   width: 100%;
   margin-top: 29px;
-  margin-left: -1px;
   padding-top: 18px;
   padding-bottom: 14px;
   padding-left: 6px;
@@ -47,6 +46,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .order-form {
+    padding-bottom: 50px;
+  }
+
   .order-form__container {
     padding-top: $desktop-padding;
     padding-bottom: $desktop-padding;
@@ -69,7 +72,7 @@
   .order-form__submit-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 2px;
+    margin-top: 3px;
     padding-left: $desktop-padding;
     padding-right: $desktop-padding;
   }
@@ -105,5 +108,10 @@
     width: 4 * $desktop-grid-line;
     margin: 0 auto;
     padding: 0;
+    margin-top: -1px;
+  }
+
+  .order-form__explanation {
+    margin-top: 12px;
   }
 }

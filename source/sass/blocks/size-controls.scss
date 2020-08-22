@@ -1,11 +1,23 @@
 .size-controls {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 7px;
   margin: 0;
   padding: 0;
+  margin-top: 22.5px;
   list-style: none;
 }
 
+.size-controls__item {
+  flex-grow: 1;
+}
+
 .size-controls__value {
-  display: block;
+  display: flex;
+  min-height: 52px;
+  justify-content: center;
+  align-items: center;
   border: 2px solid rgba($basic-black, 0.1);
   font-weight: bold;
   font-size: 17px;
@@ -19,5 +31,11 @@
   &:active,
   .size-controls__radio:checked + & {
     border-color: $basic-green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .size-controls {
+    margin-top: 20px;
   }
 }

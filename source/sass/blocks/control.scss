@@ -12,12 +12,17 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-left: -2px;
+  margin-left: -1px;
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-green;
+
+  &--solo {
+    margin-top: 5px;
+    margin-left: 1px;
+  }
 
   &::after {
     content: "";
@@ -40,7 +45,6 @@
     padding-left: $desktop-padding;
     padding-right: $desktop-padding;
 
-
     &::after {
       content: "";
       display: block;
@@ -56,6 +60,10 @@
     padding-top: 20px;
     float: left;
 
+    &--solo {
+      padding-top: 12px;
+    }
+
     &::after {
       display: none;
     }
@@ -69,7 +77,11 @@
 @media (min-width: $desktop-width) {
   .control__title {
     width: $desktop-grid-line;
-    padding-top: 16px;
+    padding-top: 18px;
     padding-left: 60px;
+
+    &--solo {
+      padding-top: 12px;
+    }
   }
 }
