@@ -105,7 +105,7 @@
       </picture>
       <div class="week-offer__order-wrapper">
         <p class="week-offer__price">Цена: 990 руб.</p>
-        <a class="week-offer__order-link button" href="#">Заказать</a>
+        <a class="week-offer__order-link button order-js" href="#">Заказать</a>
       </div>
     </section>
     <div class="separate"></div>
@@ -159,34 +159,36 @@
       </div>
       <a class="contacts__feedback-link button" href="#">Напишите нам</a>
     </section>
-  </main>
-  <section class="visually-hidden cart-popup">
+    <section class="cart-popup visually-hidden">
+    <div class="cart-popup__wrapper">
     <h2 class="cart-popup__title main-title main-title--popup">Добавить в корзину</h2>
     <form class="cart-popup__form" action="https://echo.htmlacademy.ru" method="POST">
       <p class="cart-popup__text">Выберите размер:</p>
       <ul class="cart-popup__controls size-controls">
         <li class="size-controls__item">
           <label class="size-controls__label">
-            <input class="size-controls__radio visually-hidden" type="radio" name="size" value="S" checked />
+            <input class="size-controls__radio visually-hidden" type="radio" name="size" value="S" tabindex="-1" checked />
             <span class="size-controls__value">S</span>
           </label>
         </li>
         <li class="size-controls__item">
           <label class="size-controls__label">
-            <input class="size-controls__radio visually-hidden" type="radio" name="size" value="M" />
+            <input class="size-controls__radio visually-hidden" type="radio" name="size" value="M" tabindex="-1" />
             <span class="size-controls__value">M</span>
           </label>
         </li>
         <li class="size-controls__item">
           <label class="size-controls__label">
-            <input class="size-controls__radio visually-hidden" type="radio" name="size" value="L" />
+            <input class="size-controls__radio visually-hidden" type="radio" name="size" value="L" tabindex="-1" />
             <span class="size-controls__value">L</span>
           </label>
         </li>
       </ul>
       <button class="cart-popup__submit button button--cart" type="submit">Добавить</button>
     </form>
+    </div>
   </section>
+  </main>
   <footer class="footer">
     <div class="footer__container container">
     <img class="footer__logo" src="img/logo-footer.svg" alt="Логотип">

@@ -32,6 +32,11 @@
       text-align: center;
       background-color: $special-background;
     }
+
+    &--popup {
+      font-size: 30px;
+      line-height: 57px;
+    }
   }
 }
 
@@ -42,6 +47,11 @@
 
     &--inner {
       padding-bottom: 95px;
+    }
+
+    &--popup {
+      font-size: 30px;
+      line-height: 57px;
     }
   }
 }

@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 100%;
   row-gap: 17px;
-  margin-top: 24px;
+  margin-top: 25px;
 
   &--tel {
     margin-top: 10px;
@@ -12,6 +12,7 @@
 
   &--email {
     margin-top: 8px;
+    margin-bottom: 4px;
   }
 }
 
@@ -30,9 +31,9 @@
 .input__field {
   display: block;
   width: 100%;
-  min-height: 52px;
-  margin-top: -1px;
-  margin-left: -1px;
+  min-height: 51px;
+  margin-left: 1px;
+  padding-left: 1px;
   padding-top: 3px;
   border: none;
   border-bottom: 2px solid $title-color;
@@ -54,17 +55,28 @@
   }
 }
 
-.input--tel .input__field::placeholder {
-  font-size: 19px;
+.input--tel .input__field {
+  margin-top: -4px;
+  margin-bottom: 5px;
+  padding-bottom: 9px;
 }
 
+.input--email .input__field {
+  margin-top: -4px;
+  padding-bottom: 9px;
+}
 
 .input__icon {
   position: absolute;
-  top: 20%;
-  right: 8px;
+  top: 6px;
+  right: 7px;
   fill: $title-color;
   opacity: 0.2;
+}
+
+.input--email .input__icon {
+  top: 10px;
+  right: 3px;
 }
 
 .input__field:hover + .input__icon {
@@ -82,12 +94,11 @@
     margin: 0;
 
     &--tel {
-      margin-top: 0;
-      margin-bottom: 19px;
+      margin-top: 4px;
     }
 
     &--email {
-      margin-top: 8px;
+      margin-top: 24px;
     }
   }
 
@@ -112,16 +123,26 @@
       font-size: 19px;
     }
   }
+
+  .input__icon {
+    top: 6px;
+    right: 26px;
+  }
+
+  .input--email .input__icon {
+    top: 11px;
+    right: 22px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .input {
     width: 4 * $desktop-grid-line;
-    row-gap: 26px;
+    row-gap: 25px;
     margin: 0;
 
     &--tel {
-      margin-top: 0;
+      margin-top: 5px;
       margin-bottom: 15px;
     }
 
@@ -147,5 +168,15 @@
     &::placeholder {
       color: $title-color;
     }
+  }
+
+  .input__icon {
+    top: 6px;
+    right: 8px;
+  }
+
+  .input--email .input__icon {
+    top: 11px;
+    right: 4px;
   }
 }

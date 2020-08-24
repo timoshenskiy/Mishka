@@ -50,7 +50,7 @@
   </header>
   <main>
     <h1 class="main-title main-title--inner">Каталог товаров</h1>
-    <div class="zig-zag"></div>
+    <div class="zig-zag zig-zag--title"></div>
     <section class="catalog">
       <ul class="catalog__list">
         <li class="catalog__item">
@@ -68,7 +68,8 @@
             <p class="catalog__specifications">Рост 30 см, вес 200 г</p>
             <div class="catalog__price-wrapper">
               <p class="catalog__price">1 200 руб.</p>
-              <button class="catalog__button">
+              <button class="catalog__button order-js">
+                Добавить в корзину
                 <svg class="catalog__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="19px"
                   viewBox="264 371 20 19" enable-background="new 264 371 20 19" xml:space="preserve">
@@ -94,7 +95,8 @@
             <p class="catalog__specifications">Диаметр 15 см, высота 10 см</p>
             <div class="catalog__price-wrapper">
               <p class="catalog__price">690 руб.</p>
-              <button class="catalog__button">
+              <button class="catalog__button order-js">
+                Добавить в корзину
                 <svg class="catalog__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="19px"
                   viewBox="264 371 20 19" enable-background="new 264 371 20 19" xml:space="preserve">
@@ -120,7 +122,8 @@
             <p class="catalog__specifications">Диаметр 30 см, высота 30 см</p>
             <div class="catalog__price-wrapper">
               <p class="catalog__price">1 500 руб.</p>
-              <button class="catalog__button">
+              <button class="catalog__button order-js">
+                Добавить в корзину
                 <svg class="catalog__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="19px"
                   viewBox="264 371 20 19" enable-background="new 264 371 20 19" xml:space="preserve">
@@ -149,35 +152,36 @@
         <a class="production-process__order-link button button--order" href="order.html">Сделать заказ</a>
       </div>
     </section>
+    <section class="cart-popup visually-hidden">
+      <div class="cart-popup__wrapper">
+      <h2 class="cart-popup__title main-title main-title--popup">Добавить<br>в корзину</h2>
+      <form class="cart-popup__form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="cart-popup__text">Выберите размер:</p>
+        <ul class="cart-popup__controls size-controls">
+          <li class="size-controls__item">
+            <label class="size-controls__label">
+              <input class="size-controls__radio visually-hidden" type="radio" name="size" value="S" tabindex="-1" checked />
+              <span class="size-controls__value">S</span>
+            </label>
+          </li>
+          <li class="size-controls__item">
+            <label class="size-controls__label">
+              <input class="size-controls__radio visually-hidden" type="radio" name="size" value="M" tabindex="-1" />
+              <span class="size-controls__value">M</span>
+            </label>
+          </li>
+          <li class="size-controls__item">
+            <label class="size-controls__label">
+              <input class="size-controls__radio visually-hidden" type="radio" name="size" value="L" tabindex="-1" />
+              <span class="size-controls__value">L</span>
+            </label>
+          </li>
+        </ul>
+        <button class="cart-popup__submit button button--cart" type="submit">Добавить</button>
+      </form>
+      </div>
+    </section>
   </main>
-  <section class="visually-hidden cart-popup">
-    <h2 class="cart-popup__title main-title main-title--popup">Добавить в корзину</h2>
-    <form class="cart-popup__form" action="https://echo.htmlacademy.ru" method="POST">
-      <p class="cart-popup__text">Выберите размер:</p>
-      <ul class="cart-popup__controls size-controls">
-        <li class="size-controls__item">
-          <label class="size-controls__label">
-            <input class="size-controls__radio" type="radio" name="size" value="S" checked />
-            <span class="size-controls__value">S</span>
-          </label>
-        </li>
-        <li class="size-controls__item">
-          <label class="size-controls__label">
-            <input class="size-controls__radio" type="radio" name="size" value="M" />
-            <span class="size-controls__value">M</span>
-          </label>
-        </li>
-        <li class="size-controls__item">
-          <label class="size-controls__label">
-            <input class="size-controls__radio" type="radio" name="size" value="L" />
-            <span class="size-controls__value">L</span>
-          </label>
-        </li>
-      </ul>
-      <button class="cart-popup__submit button button--cart" type="submit"><span
-          class="button__text">Добавить</span></button>
-    </form>
-  </section>
   <footer class="footer">
     <div class="footer__container container">
       <img class="footer__logo" src="img/logo-footer.svg" alt="Логотип">
@@ -238,6 +242,8 @@
       </p>
     </div>
   </footer>
+  <!-- <script src="js/main-menu.js"></script> -->
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
