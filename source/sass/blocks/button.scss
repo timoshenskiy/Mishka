@@ -7,6 +7,7 @@
   line-height: 20px;
   text-decoration: none;
   color: $basic-black;
+  font-family: $basic-font-family;
 
   &:hover,
   &:focus {
@@ -30,7 +31,6 @@
 
   &--order {
     font-weight: bold;
-    font-size: 17px;
     line-height: 16px;
   }
 }
