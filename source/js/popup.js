@@ -19,43 +19,43 @@ var controls = document.querySelector(CART_POPUP_CONTROLS_SELECTOR);
 var closePopup = function () {
   cartPopup.classList.add(HIDE_CLASS);
   cartPopupWrapper.classList.remove(SHOW_CLASS);
-  cartPopup.removeEventListener('click', cartBackgroundClickHandler)
+  cartPopup.removeEventListener('click', cartBackgroundClickHandler);
   document.removeEventListener('keydown', escapeButtonKeydownHandler);
-}
+};
 
 var openPopup = function () {
   cartPopup.classList.remove(HIDE_CLASS);
   cartPopupWrapper.classList.add(SHOW_CLASS);
   controls.focus();
-  cartPopup.addEventListener('click', cartBackgroundClickHandler)
+  cartPopup.addEventListener('click', cartBackgroundClickHandler);
   document.addEventListener('keydown', escapeButtonKeydownHandler);
-}
+};
 
 var orderButtonClickHandler = function (evt) {
   evt.preventDefault();
       openPopup();
-}
+};
 
 var cartBackgroundClickHandler = function (evt) {
   if(cartPopup === evt.target) {
     closePopup();
   }
-}
+};
 
 var escapeButtonKeydownHandler = function (evt) {
   if (evt.keyCode === ESC_KEY) {
     closePopup();
   }
-}
+};
 
 /* index.html */
 if (orderButton) {
     orderButton.addEventListener('click', orderButtonClickHandler);
-};
+}
 
 /* catalog.html */
 if (cartButtons) {
   for (var i = 0; i < cartButtons.length; i++) {
     cartButtons[i].addEventListener('click', orderButtonClickHandler);
   }
-};
+}
