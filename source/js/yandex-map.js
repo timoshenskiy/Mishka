@@ -1,8 +1,8 @@
-var MAP_CONTAINER_SELECTOR = ".map-js";
-var MAP_IMAGE_SELECTOR = ".map-img-js";
-var MAP_MARK_SELECTOR = ".map-mark-js";
+var MAP_CONTAINER_SELECTOR = '.contacts__map';
+var MAP_IMAGE_SELECTOR = '.contacts__image';
+var MAP_MARK_SELECTOR = '.contacts__mark';
 
-var HIDE_CLASS = "visually-hidden";
+var HIDE_CLASS = 'visually-hidden';
 
 document.querySelector(MAP_IMAGE_SELECTOR).classList.add(HIDE_CLASS);
 document.querySelector(MAP_MARK_SELECTOR).classList.add(HIDE_CLASS);
@@ -11,19 +11,19 @@ ymaps.ready(function () {
   var myMap = new ymaps.Map(
       document.querySelector(MAP_CONTAINER_SELECTOR),
       {
-        center: [59.93895, 30.32625],
+        center: [59.939035, 30.323118],
         zoom: 16,
       },
       {
-        searchControlProvider: "yandex#search",
+        searchControlProvider: 'yandex#search',
       }
     ),
     myPlacemarkWithContent = new ymaps.Placemark(
-      [59.938549, 30.32301],
+      [59.938300, 30.323300],
       {},
       {
-        iconLayout: "default#imageWithContent",
-        iconImageHref: "img/map-pin.svg",
+        iconLayout: 'default#imageWithContent',
+        iconImageHref: 'img/map-pin.svg',
         iconImageSize: [67, 100],
         iconImageOffset: [-34, -150],
       }

@@ -9,6 +9,10 @@
   height: 100vh;
   background-color: rgba($white, 0.9);
   z-index: 10;
+
+  &--close {
+    display: none;
+  }
 }
 
 .cart-popup__wrapper {
@@ -24,6 +28,10 @@
   border-top: 1px solid $popup-border-color;
   border-bottom: 1px solid $popup-border-color;
   box-shadow: 0 5px 10px rgba($popup-shadow-color, 0.25);
+
+  &--animated {
+    animation: bounce 0.6s;
+  }
 }
 
 .cart-popup__title {
