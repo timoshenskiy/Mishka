@@ -17,6 +17,6 @@ var menuButtonClickHandler = function () {
   navigation.classList.toggle(NAVIGATION_CLOSE_CLASS);
   searchAndCart.classList.toggle(SEARCH_AND_CART_CLOSE_CLASS);
   menuButton.classList.toggle(MENU_BUTTON_CLOSE_CLASS);
-}
+};
 
-menuButton.addEventListener('click', menuButtonClickHandler)
+menuButton.addEventListener('click', menuButtonClickHandler);
