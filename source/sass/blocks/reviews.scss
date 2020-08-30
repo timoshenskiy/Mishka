@@ -61,7 +61,7 @@
     content: "";
     position: absolute;
     top: 12px;
-    left: 36px;
+    left: 29%;
     display: block;
     width: 50px;
     min-height: 26px;
@@ -70,6 +70,8 @@
   }
 
   &--next::before {
+    left: auto;
+    right: 32%;
     background-image: url("../img/icon-right-arrow.svg");
   }
 
