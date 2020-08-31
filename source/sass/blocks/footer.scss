@@ -36,6 +36,15 @@
   .footer__logo {
     display: block;
     margin-top: -5px;
+
+    &:hover,
+    &:focus {
+      fill: $special-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .footer__copyright {
