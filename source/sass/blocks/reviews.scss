@@ -108,6 +108,12 @@
     padding-bottom: 115px;
   }
 
+  @media (min-resolution: 2dppx) {
+    .reviews {
+      background-image: url("../img/review@2x.jpg");
+    }
+  }
+
   .reviews__text {
     margin-top: 38px;
     grid-column-start: 1;
